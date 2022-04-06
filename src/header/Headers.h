@@ -35,8 +35,10 @@
 #include <future>
 //mathematics library used in C
 #include <cmath>
-//used for maps, like a java hashmap
+//unsorted map, like a java hashmap
 #include <unordered_map>
+//sorted map
+#include <map>
 
 #define PR_DEBUG 1
 //Macro replaces whatever is in "x" to where "x" is in the code

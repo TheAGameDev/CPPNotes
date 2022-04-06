@@ -1,4 +1,4 @@
-//C++ Notes created from The Cherno's videos and online courses (Originally made with XCode)
+//C++ Notes created from The Cherno's videos and online courses (XCode/Visual Studio)
 #include "header/Headers.h"
 int ext = 2;
 
@@ -107,6 +107,7 @@ void dataStructuresExample2();
 void dataStructuresExample3();
 void iteratorExample();
 void iteratorExample2();
+void mapsExamples();
 
 int main() {
     Log("Type the example to load: ");
@@ -116,278 +117,189 @@ int main() {
     if (name == "Math") { // Math
         std::cout << Multiply3(5, 8) << std::endl;
         std::cout << Number(1) << std::endl;
-    }
-    else if (name == "Pointer") { //Pointers
+    } else if (name == "Pointer") { //Pointers
         pointerExample();
-    }
-    else if (name == "Pointer2") {
+    } else if (name == "Pointer2") {
         pointerExample2();
-    }
-    else if (name == "If") { //If
+    } else if (name == "If") { //If
         ifExample();
-    }
-    else if (name == "References") { //References
+    } else if (name == "References") { //References
         referencesExample();
-    }
-    else if (name == "References2") {
+    } else if (name == "References2") {
         referencesExample2();
-    }
-    else if (name == "References3") {
+    } else if (name == "References3") {
         referencesExample3();
-    }
-    else if (name == "References4") {
+    } else if (name == "References4") {
         referencesExample4();
-    }
-    else if (name == "References5") {
+    } else if (name == "References5") {
         referencesExample5();
-    }
-    else if (name == "PlayerClass") { //Classes
+    } else if (name == "PlayerClass") { //Classes
         playerClassExample();
-    }
-    else if (name == "PlayerClass2") {
+    } else if (name == "PlayerClass2") {
         playerClassExample2();
-    }
-    else if (name == "LogClass") {
+    } else if (name == "LogClass") {
         logClassExample();
-    }
-    else if (name == "StaticClass") { //Static
+    } else if (name == "StaticClass") { //Static
         staticClassExample();
-    }
-    else if (name == "StaticLocal") {
+    } else if (name == "StaticLocal") {
         staticLocalExample();
-    }
-    else if (name == "Enum") { //Enums
+    } else if (name == "Enum") { //Enums
         enumExample();
-    }
-    else if (name == "Constructor") { //Constructor & Destructor
+    } else if (name == "Constructor") { //Constructor & Destructor
         constructorExample();
-    }
-    else if (name == "Destructor") {
+    } else if (name == "Destructor") {
         destructorExample();
-    }
-    else if (name == "Inheritance") { //Inhertance
+    } else if (name == "Inheritance") { //Inhertance
         inheritanceExample();
-    }
-    else if (name == "VirtualFunction") { //VirtualFunctions
+    } else if (name == "VirtualFunction") { //VirtualFunctions
         virtualFunctionsExample();
-    }
-    else if (name == "Interface") { //Interface
+    } else if (name == "Interface") { //Interface
         interfaceExample();
-    }
-    else if (name == "Array") { //Arrays
+    } else if (name == "Array") { //Arrays
         arrayExample();
-    }
-    else if (name == "Array2") {
+    } else if (name == "Array2") {
         arrayExample2();
-    }
-    else if (name == "String") { //Strings
+    } else if (name == "String") { //Strings
         stringExample();
-    }
-    else if (name == "String2") {
+    } else if (name == "String2") {
         stringExample2();
-    }
-    else if (name == "StringLiteral") {
+    } else if (name == "StringLiteral") {
         stringLiteralExample();
-    }
-    else if (name == "Mutable") { //Mutable
+    } else if (name == "Mutable") { //Mutable
         mutableExample();
-    }
-    else if (name == "InitializerList") { //InitializerLists
+    } else if (name == "InitializerList") { //InitializerLists
         initializerListExample();
-    }
-    else if (name == "TernaryOperator") { //TernaryOperators
+    } else if (name == "TernaryOperator") { //TernaryOperators
         ternaryOperatorsExample();
-    }
-    else if (name == "CreateObjects") { //Objects
+    } else if (name == "CreateObjects") { //Objects
         createObjectsExample();
-    }
-    else if (name == "New") { //New
+    } else if (name == "New") { //New
         newExample();
-    }
-    else if (name == "Implicit") { //Implicit & Explicit
+    } else if (name == "Implicit") { //Implicit & Explicit
         implicitExample();
-    }
-    else if (name == "Explicit") {
+    } else if (name == "Explicit") {
         explicitExample();
-    }
-    else if (name == "Operator") { //Operators
+    } else if (name == "Operator") { //Operators
         operatorExample();
-    }
-    else if (name == "ObjectLifetime") { //Object Lifetime
+    } else if (name == "ObjectLifetime") { //Object Lifetime
         objectLifetimeExample();
-    }
-    else if (name == "ObjectLifetime2") {
+    } else if (name == "ObjectLifetime2") {
         objectLifetimeExample2();
-    }
-    else if (name == "SmartPointers") { //Smart Pointers
+    } else if (name == "SmartPointers") { //Smart Pointers
         smartPointersExample();
-    }
-    else if (name == "SmartPointers2") {
+    } else if (name == "SmartPointers2") {
         smartPointersExample2();
-    }
-    else if (name == "Copy") { //Copy
+    } else if (name == "Copy") { //Copy
         copyExample();
-    }
-    else if (name == "Copy2") {
+    } else if (name == "Copy2") {
         copyExample2();
-    }
-    else if (name == "Copy3") {
+    } else if (name == "Copy3") {
         copyExample3();
-    }
-    else if (name == "Arrow") { //Arrows
+    } else if (name == "Arrow") { //Arrows
         arrowExample();
-    }
-    else if (name == "Arrow2") {
+    } else if (name == "Arrow2") {
         arrowExample2();
-    }
-    else if (name == "Vector") { //Vectors
+    } else if (name == "Vector") { //Vectors
         vectorExample();
-    }
-    else if (name == "Vector2") {
+    } else if (name == "Vector2") {
         vectorExample2();
-    }
-    else if (name == "Template") { //Templates
+    } else if (name == "Template") { //Templates
         templateExample();
-    }
-    else if (name == "Template2") {
+    } else if (name == "Template2") {
         templateExample2();
-    }
-    else if (name == "Template3") {
+    } else if (name == "Template3") {
         templateExample3();
-    }
-    else if (name == "Allocation") { //Allocation
+    } else if (name == "Allocation") { //Allocation
         allocationExample();
-    }
-    else if (name == "Macro") { //Macros
+    } else if (name == "Macro") { //Macros
         macroExample();
-    }
-    else if (name == "Auto") { //Auto
+    } else if (name == "Auto") { //Auto
         autoExample();
-    }
-    else if (name == "StaticArray") { //Static Arrays
+    } else if (name == "StaticArray") { //Static Arrays
         staticArrayExample();
-    }
-    else if (name == "FunctionPointers") { //Function Pointers
+    } else if (name == "FunctionPointers") { //Function Pointers
         functionPointersExample();
-    }
-    else if (name == "FunctionPointers2") {
+    } else if (name == "FunctionPointers2") {
         functionPointersExample2();
-    }
-    else if (name == "Lambda") { //Lambdas
+    } else if (name == "Lambda") { //Lambdas
         lambdaExample();
-    }
-    else if (name == "Namespace") { //Namespaces
+    } else if (name == "Namespace") { //Namespaces
         namespaceExample();
-    }
-    else if (name == "Thread") { //Threads
+    } else if (name == "Thread") { //Threads
         threadExample();
-    }
-    else if (name == "Timing") { //Timing
+    } else if (name == "Timing") { //Timing
         timingExample();
-    }
-    else if (name == "MultidimensionalArray") { //Multi-dimensional Arrays
+    } else if (name == "MultidimensionalArray") { //Multi-dimensional Arrays
         multidimensionalArrayExample();
-    }
-    else if (name == "MultidimensionalArray2") {
+    } else if (name == "MultidimensionalArray2") {
         multidimensionalArrayExample2();
-    }
-    else if (name == "Sorting") { //Sorting
+    } else if (name == "Sorting") { //Sorting
         sortingExample();
-    }
-    else if (name == "TypePunning") { //Type Punning
+    } else if (name == "TypePunning") { //Type Punning
         typePunningExample();
-    }
-    else if (name == "TypePunning2") {
+    } else if (name == "TypePunning2") {
         typePunningExample2();
-    }
-    else if (name == "TypePunning3") {
+    } else if (name == "TypePunning3") {
         typePunningExample3();
-    }
-    else if (name == "Union") { //Unions
+    } else if (name == "Union") { //Unions
         unionExample();
-    }
-    else if (name == "VirtualDestructor") { //Virtual Destructors
+    } else if (name == "VirtualDestructor") { //Virtual Destructors
         virtualDestructorExample();
-    }
-    else if (name == "Casting") { //Casting
+    } else if (name == "Casting") { //Casting
         castingExample();
-    }
-    else if (name == "Casting2") {
+    } else if (name == "Casting2") {
         castingExample2();
-    }
-    else if (name == "DynamicCast") {
+    } else if (name == "DynamicCast") {
         dynamicCastExample();
-    }
-    else if (name == "Benchmarking") { //Benchmarking
+    } else if (name == "Benchmarking") { //Benchmarking
         benchmarkingExample();
-    }
-    else if (name == "Benchmarking2") {
+    } else if (name == "Benchmarking2") {
         benchmarkingExample2();
-    }
-    else if (name == "StructuredBindings") { //Structured Bindings
+    } else if (name == "StructuredBindings") { //Structured Bindings
         structuredBindingsExample();
-    }
-    else if (name == "StructuredBindings2") {
+    } else if (name == "StructuredBindings2") {
         structuredBindingsExample2();
-    }
-    else if (name == "Optional") { //Optional
+    } else if (name == "Optional") { //Optional
         optionalDataExample();
-    }
-    else if (name == "MultipleDataTypesInSingleVariable") { //Data Types Single Variable
+    } else if (name == "MultipleDataTypesInSingleVariable") { //Data Types Single Variable
         multipleDataTypesInSingleVariableExample();
-    }
-    else if (name == "StoreAnyDataInSingleVariable") {
+    } else if (name == "StoreAnyDataInSingleVariable") {
         storeAnyDataInSingleVariableExample();
-    }
-    else if (name == "Performance") { //Performance
+    } else if (name == "Performance") { //Performance
         performanceExample();
-    }
-    else if (name == "StringPerformance") {
+    } else if (name == "StringPerformance") {
         stringPerformanceExample();
-    }
-    else if (name == "VisualBenchmarking") { //Visual Benchmarking
+    } else if (name == "VisualBenchmarking") { //Visual Benchmarking
         visualBenchmarkingExample();
-    }
-    else if (name == "Singletons") { //Singletons
+    } else if (name == "Singletons") { //Singletons
         singletonsExample();
-    }
-    else if (name == "SmallStringOptimization") { //Small String Optimization
+    } else if (name == "SmallStringOptimization") { //Small String Optimization
         smallStringOptimizationExample();
-    }
-    else if (name == "MemoryAllocation") { //Memory Allocation
+    } else if (name == "MemoryAllocation") { //Memory Allocation
         memoryAllocationExample();
-    }
-    else if (name == "lRValues") { //LValues & RValues
+    } else if (name == "lRValues") { //LValues & RValues
         lRValuesExample();
-    }
-    else if (name == "lRValues2") {
+    } else if (name == "lRValues2") {
         lRValuesExample2();
-    }
-    else if (name == "ArgumentEvaluation") { //Argument Evaluation Order
+    } else if (name == "ArgumentEvaluation") { //Argument Evaluation Order
         argumentEvaluationExample();
-    }
-    else if (name == "MoveSemantics") { //Move Semantics
+    } else if (name == "MoveSemantics") { //Move Semantics
         moveSemanticsExample();
-    }
-    else if (name == "MoveSemantics2") {
+    } else if (name == "MoveSemantics2") {
         moveSemanticsExample2();
-    }
-    else if (name == "DataStructures") { //Data Structures
+    } else if (name == "DataStructures") { //Data Structures
         dataStructuresExample();
-    }
-    else if (name == "DataStructures2") {
+    } else if (name == "DataStructures2") {
         dataStructuresExample2();
-    }
-    else if (name == "DataStructures3") {
+    } else if (name == "DataStructures3") {
         dataStructuresExample3();
-    }
-    else if (name == "Iterator") { //Iterators
+    } else if (name == "Iterator") { //Iterators
         iteratorExample();
-    }
-    else if (name == "Iterator2") {
+    } else if (name == "Iterator2") {
         iteratorExample2();
-    }
-    else {
+    } else if (name == "Maps") { //Maps
+        mapsExamples(); //Grouped Examples together since it was simple.
+    } else {
         Log("No example with that name!");
     }
     Log("-------------------------");
